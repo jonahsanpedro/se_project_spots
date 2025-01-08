@@ -3,11 +3,18 @@
 }
 
 .cards__list {
+  border-bottom: 1px rgb(33, 33, 33, 0.4) solid;
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 32px;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 413px);
   justify-content: center;
   gap: 40px 20px;
+}
+
+@media screen and (max-width: 627px) {
+  .cads__list {
+    grid-template-columns: repeat(auto-fit, 288px);
+  }
 }
