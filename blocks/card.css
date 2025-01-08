@@ -34,5 +34,7 @@
 }
 
 @media screen and (max-width: 627px) {
-  height: 288px;
+  .card {
+    height: 288px;
+  }
 }
