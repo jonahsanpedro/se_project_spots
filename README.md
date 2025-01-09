@@ -12,12 +12,6 @@ The layout of the web application is pretty standard when compared to other avai
 
 With the simplicity of the webpage, it can be easy to understand and how to navigate through the application. Users can interact with 3 possible buttons. These can be indicated by a hover state. If the user wants to edit their profile or add a new post, the buttons will become opaque when hovering over them as well as change the cursor to a pointer.
 
-**Figma**
+https://jonahsanpedro.github.io/se_project_spots/
 
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-
-**Images**
-
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
-
-Good luck and have fun!
+https://drive.google.com/file/d/1T8blxOMXMYKJA-cVeA2oDoCR8l5zpqPr/view?usp=sharing
