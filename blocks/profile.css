@@ -34,7 +34,7 @@
 
 .profile__description {
   margin: 0;
-  color: #212121;
+  color: #212121b2;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -66,7 +66,7 @@
 }
 
 .profile__edit-button:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .profile__add-button {
@@ -87,7 +87,7 @@
 }
 
 .profile__add-button:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 627px) {
