@@ -1,8 +1,9 @@
 .footer__copyright {
   display: flex;
   justify-content: center;
-  margin: 60px 0 0;
-  font-family: Poppins;
+  margin: 0;
+  padding: 60px 0;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
