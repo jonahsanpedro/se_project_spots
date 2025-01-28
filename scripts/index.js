@@ -25,4 +25,22 @@ const initialCards = [
   },
 ];
 
-console.log(initialCards);
+const profileEditButton = document.querySelector(".profile__edit-btn");
+const editModal = document.querySelector("#edit-profile-modal");
+const editModalCloseBtn = editModal.querySelector(".modal__close-btn");
+
+//to call an element with an id you can use a #
+//if null is returned in console, DOUBLE CHECK spelling as instructed in video
+function openModal() {
+  editModal.classList.add("modal__opened");
+}
+
+//remove the EventListener openModal rather than applying modal__closed
+function closeModal() {
+  editModal.classList.remove("modal__opened");
+}
+
+//no . when using classList
+profileEditButton.addEventListener("click", openModal);
+
+editModalCloseBtn.addEventListener("click", closeModal);

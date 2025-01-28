@@ -66,7 +66,7 @@
   border-width: 1px;
   margin-bottom: 32px;
   color: rgba(33, 33, 33, 1);
-  border-color: rgba(33,33,33,0.4)
+  border-color: rgba(33, 33, 33, 0.4);
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -74,7 +74,7 @@
 }
 
 .modal__input:hover {
-  border-color: rgba(33,33,33,1)
+  border-color: rgba(33, 33, 33, 1);
 }
 
 .modal__submit-btn {

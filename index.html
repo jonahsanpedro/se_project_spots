@@ -25,11 +25,11 @@
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
-            <button type="button" class="profile__edit-button">
+            <button type="button" class="profile__edit-btn">
               <img src="./images/pencil.svg" alt="Pencil icon" />Edit Profile
             </button>
           </div>
-          <button type="button" class="profile__add-button">
+          <button type="button" class="profile__add-btn">
             <img src="./images/plus.svg" alt="Plus icon" />New Post
           </button>
         </section>
@@ -109,19 +109,30 @@
       <footer class="footer">
         <p class="footer__copyright">2023 &copy; Spots</p>
       </footer>
-      <div class="modal modal__opened">
+      <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="submit" class="modal__close-btn">
-            <img src="./images/closebtn.svg" alt="Close Button">
+            <img src="./images/closebtn.svg" alt="Close Button" />
           </button>
           <h2 class="modal__title">Edit profile</h2>
-          <form name="edit-profile"class="modal__form">
+          <form name="edit-profile" class="modal__form">
             <label for="name" class="modal__label">
               Name
-              <input id="name" type="text" class="modal__input" placeholder="Type your name">
+              <input
+                id="name"
+                type="text"
+                class="modal__input"
+                placeholder="Type your name"
+              />
+            </label>
             <label for="description" class="modal__label">
               Description
-              <input id="description" type="text" class="modal__input" placeholder="Describe yourself">
+              <input
+                id="description"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
