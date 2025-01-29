@@ -50,9 +50,8 @@ function getCardElement(data) {
   // TO DO select the image element
 
   cardNameEl.textContent = data.name;
-  cardImageEl.value = data.link;
   cardImageEl.setAttribute("src", data.link);
-  cardImageEl.setAttribute("alt", "alt");
+  cardImageEl.setAttribute("alt", data.name);
   // TO DO assign values to the image src and alt
 
   return cardElement;
@@ -61,15 +60,15 @@ function getCardElement(data) {
 //to call an element with an id you can use a #
 //if null is returned in console, DOUBLE CHECK spelling as instructed in video
 function openModal() {
+  editModal.classList.add("modal_opened");
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
-  editModal.classList.add("modal__opened");
 }
 
 //remove the EventListener openModal rather than applying modal__closed
 //no . when using classList
 function closeModal() {
-  editModal.classList.remove("modal__opened");
+  editModal.classList.remove("modal_opened");
 }
 
 function handleEditFormSubmit(evt) {

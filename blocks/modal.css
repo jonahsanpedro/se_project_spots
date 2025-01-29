@@ -13,7 +13,7 @@
   visibility: hidden;
 }
 
-.modal__opened {
+.modal_opened {
   visibility: visible;
 }
 
@@ -37,6 +37,7 @@
   border: 0;
   background-color: white;
   padding: 0;
+  cursor: pointer;
 }
 
 .modal__close-btn:hover {
@@ -87,6 +88,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
