@@ -51,6 +51,12 @@ const cardForm = cardModal.querySelector(".modal__form");
 const cardNameInput = cardModal.querySelector("#add-card-name-input");
 const cardLinkInput = cardModal.querySelector("#add-card-link-input");
 
+//Preview related
+const previewModal = document.querySelector("#preview-modal");
+const previewModalImageEl = previewModal.querySelector(".modal__image");
+const previewModalCaptionEl = previewModal.querySelector(".modal__caption");
+const previewCloseBtn = previewModal.querySelector(".modal__close-btn");
+
 //Card related elements
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -65,10 +71,6 @@ function getCardElement(data) {
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardLikeBtn = cardElement.querySelector(".card__like-button");
   const cardDeleteBtn = cardElement.querySelector(".card__delete-button");
-  const previewModal = document.querySelector("#preview-modal");
-  const previewModalImageEl = previewModal.querySelector(".modal__image");
-  const previewModalCaptionEl = previewModal.querySelector(".modal__caption");
-  const previewCloseBtn = previewModal.querySelector(".modal__close-btn");
 
   cardNameEl.textContent = data.name;
   cardImageEl.setAttribute("src", data.link);
@@ -92,14 +94,12 @@ function getCardElement(data) {
     previewModalCaptionEl.textContent = data.name;
   });
 
-  previewCloseBtn.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-  //SET THE LISTENER ON DELETE BUTTON
-  //THe handler should remove the card from the DOM
-
   return cardElement;
 }
+
+previewCloseBtn.addEventListener("click", () => {
+  closeModal(previewModal);
+});
 
 //to call an element with an id you can use a #
 //if null is returned in console, DOUBLE CHECK spelling as instructed in video
@@ -124,7 +124,8 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardElement = getCardElement(inputValues);
-  cardsList.append(cardElement);
+  cardsList.prepend(cardElement);
+  evt.target.reset();
   closeModal(cardModal);
 }
 

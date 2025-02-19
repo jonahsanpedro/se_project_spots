@@ -78,7 +78,7 @@
   margin-left: auto;
   margin-top: auto;
   color: white;
-  background-color: rgb(33, 33, 33, 1);
+  background-color: rgba(33, 33, 33, 1);
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
@@ -86,8 +86,8 @@
   cursor: pointer;
 }
 
-.profile__add-button:hover {
-  opacity: 0.8;
+.profile__add-btn:hover {
+  background-color: rgba(33, 33, 33, 0.8);
 }
 
 @media screen and (max-width: 627px) {
@@ -131,5 +131,15 @@
     width: 100%;
     font-size: 16px;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__add-btn {
+    width: 100%;
+  }
+
+  .profile__edit-btn {
+    width: 100%;
   }
 }
