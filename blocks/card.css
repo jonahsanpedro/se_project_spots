@@ -70,7 +70,6 @@
 
 .card__like-button-liked:hover {
   background-image: url(../images/like-icon-liked-hover.svg);
-  background: transparent;
   cursor: pointer;
 }
 
