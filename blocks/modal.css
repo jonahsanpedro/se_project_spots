@@ -35,6 +35,7 @@
   flex-direction: column;
   align-self: auto;
   background: transparent;
+  width: auto;
 }
 
 .modal__image {
@@ -67,7 +68,7 @@
 .modal__close-btn_type_preview {
   position: absolute;
   background-image: url(../images/close-light.svg);
-  right: -20px;
+  right: -5px;
   width: 40px;
   height: 40px;
   opacity: 1;
