@@ -27,10 +27,10 @@
   width: 100%;
   position: relative;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .modal__container_type_preview {
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-self: auto;
@@ -56,6 +56,7 @@
   border: 0;
   padding: 0;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .modal__close-btn:hover {
@@ -66,8 +67,7 @@
 .modal__close-btn_type_preview {
   position: absolute;
   background-image: url(../images/close-light.svg);
-  top: 0;
-  right: -50px;
+  right: -20px;
   width: 40px;
   height: 40px;
   opacity: 1;
