@@ -141,7 +141,10 @@
   display: block;
   margin-top: 8px;
   /* TODO - use correct color and font sizes*/
+  font-size: 16px;
+  line-height: 18px;
   color: red;
+  border-color: red;
 }
 
 .modal__submit-btn {

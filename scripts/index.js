@@ -104,16 +104,25 @@ previewCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
 });
 
+function handleEscKey(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_opened");
+    closeModal(openedModal);
+  }
+}
+
 //to call an element with an id you can use a #
 //if null is returned in console, DOUBLE CHECK spelling as instructed in video
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscKey);
 }
 
 //remove the EventListener openModal rather than applying modal__closed
 //no . when using classList
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscKey);
 }
 
 function handleEditFormSubmit(evt) {
@@ -172,4 +181,14 @@ cardForm.addEventListener("submit", handleAddCardSubmit);
 initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
+});
+
+const allModals = document.querySelectorAll(".modal");
+
+allModals.forEach((currentModal) => {
+  currentModal.addEventListener("click", (evt) => {
+    if (evt.target === currentModal) {
+      closeModal(currentModal);
+    }
+  });
 });
