@@ -108,18 +108,18 @@
 .modal__label {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 17.6px;
   color: rgba(33, 33, 33, 0.7);
+  margin-bottom: 32px;
 }
 
 .modal__input {
   padding: 16px 12px;
+  margin-top: 8px;
   border-radius: 8px;
   border-width: 1px;
-  margin-bottom: 32px;
   color: rgba(33, 33, 33, 1);
   border-color: rgba(33, 33, 33, 0.4);
   font-weight: 500;
@@ -129,9 +129,21 @@
   transition: background 0.3s;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__input:hover {
   border-color: rgba(0, 0, 0, 0.8);
 }
+
+.modal__error {
+  display: block;
+  margin-top: 8px;
+  /* TODO - use correct color and font sizes*/
+  color: red;
+}
+
 .modal__submit-btn {
   width: 156px;
   padding: 18px 0;
@@ -143,6 +155,10 @@
   font-size: 16px;
   line-height: 16px;
   cursor: pointer;
+}
+
+.modal__submit-btn_disabled {
+  opacity: 50%;
 }
 
 @media screen and (max-width: 627px) {
