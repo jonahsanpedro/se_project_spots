@@ -4,10 +4,48 @@
   border-bottom: 1px rgb(33, 33, 33, 0.4) solid;
 }
 
+.profile__avatar-container {
+  position: relative;
+  margin-right: 20px;
+  width: 190px;
+  height: 190px;
+}
+
+.profile__avatar-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  visibility: hidden;
+  padding-bottom: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  gap: 8px;
+  /* TODO - finish avatar button styles */
+}
+
+.profile__avatar-container:hover .profile__avatar-btn {
+  visibility: visible;
+}
+
+/* when image is smaller use empty string in content*/
+.profile__avatar-btn::after {
+  content: "Edit Avatar";
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
 .profile__avatar {
   height: 190px;
   width: 190px;
-  margin-right: 20px;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -97,7 +135,37 @@
     align-items: center;
     text-align: center;
     padding-top: 20px;
+    margin: 0 auto;
   }
+
+  .profile__avatar-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 12px;
+    position: relative;
+  }
+
+  .profile__avatar-btn {
+    visibility: visible;
+    width: 23.34px;
+    height: 23.34px;
+    top: auto;
+    left: auto;
+    bottom: 4.66px;
+    right: 4.66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+  }
+
+  .profile__avatar-btn::after {
+    content: "";
+  }
+
+  /* TODO - finish mobile avatar button styles*/
 
   .profile__avatar {
     width: 80px;
@@ -106,8 +174,9 @@
   }
 
   .profile__column {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     text-align: center;
+    width: 100%;
   }
 
   .profile__name {
@@ -122,11 +191,11 @@
     max-width: 288px;
   }
 
-  .profile__edit-button {
+  .profile__edit-btn {
     align-self: center;
   }
 
-  .profile__add-button {
+  .profile__add-btn {
     max-width: 288px;
     width: 100%;
     font-size: 16px;
