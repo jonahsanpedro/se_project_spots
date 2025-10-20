@@ -1,4 +1,4 @@
-Sprint 3 Project: Spots
+Spots Application
 
 This is my project for Sprint 3 called Spots. For this project I created an interactive social media application where users can upload and delete, include descriptions, and "like" photos from other users. I also added the ability to edit the users profile as well.
 
